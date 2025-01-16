@@ -75,7 +75,7 @@ print("Type disconnect to exit(at the start of each loop)")
 while True:
     #Game Day1
     pygame.display.update()
-    Clock.tick(32)
+    Clock.tick(64)
     GameSurface.fill(pygame.Color(0,0,0))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
