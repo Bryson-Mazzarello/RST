@@ -31,7 +31,7 @@ pos2m = [
     'nil',
     basespeed[1]-basespeed[2] * random.randint(-1, 1),
     basespeed[2],
-    0.012,
+    0.016,
 ]
 
 
@@ -52,7 +52,7 @@ def resetball():
         'nil',
         basespeed[1]-basespeed[2] * random.randint(-1, 1),
         basespeed[2],
-        0.012,
+        0.016,
     ]
     return 'nil', pos2, pos2m, basespeed
 
@@ -166,7 +166,7 @@ while True:
     #Collision Day3,Day4,Day5, Day6, Day7 (Pain in the a**)
     if mth(60, 60, 0.25):
         for i in range(2):
-            pos2[i + 1] = pos2[i + 1] - pos2m[i + 1]*30
+            pos2[i + 1] = pos2[i + 1] - pos2m[i + 1]*25
         pos2m[2] = pos2m[2] * -1.075
         pos2m[1] = pos2m[1] * 1.025
     #Ball Momentum Calc Day2
